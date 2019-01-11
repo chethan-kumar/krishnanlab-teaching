@@ -13,7 +13,7 @@
 ## Description
 This course is an introduction to contemporary topics in bioinformatics and computational biology, dealing with combining large-scale data and modern analytical techniques to gain biological/biomedical insights. In each topic, centered around a recent paper, we will discuss the major biological & biomedical questions, explore the relevant molecular/genomics/biomedical datasets, and understand the underlying statistical, probabilistic, & machine-learning approaches.
 
-Students will learn how to formulate problems for quantitative inquiry, design computational projects, understand and think critically about data & methods, communicate research findings, perform reproducible research, and practice open science. Students will apply all these by carrying out a group project, presenting their project in class, and submit a report at the end of the course.
+Students will learn how to formulate problems for quantitative inquiry, design computational projects, understand and think critically about data & methods, communicate research findings, perform reproducible research, and practice open science. Students will apply all these by carrying out a project, presenting their project in class, and submit a report at the end of the course.
 
 **Note**  
 Open to both undergraduate and graduate students. Counts toward the CMSE minor, graduate certificates, and dual PhD. Please email Heather Johnson at john1451@msu.edu for an override.
@@ -23,7 +23,7 @@ CMSE 201 or CMSE 301-304 or equivalent with programming experience and two semes
 Statistics at the level of STT 231 is strongly recommended.
 
 Basically, it would be assumed that you:
-- know how to code in one of the mainstream languages like Python and R,
+- know how to code in one of the mainstream languages like Python or R,
 - have an understanding of basic statistics and probability, and
 - have studied basic genetics, molecular biology, and cellular biology.
 
@@ -39,23 +39,37 @@ Contact | Email: arjun@msu.edu</br>Twitter: [@compbiologist](https://twitter.com
 ## Course Outline and Materials
 ### Major Topics
 _(subject to changes)_
-* Genome assembly & annotation
-* Sequence alignment & pattern finding
-* Comparative genomics
-* Genetic variation & quantitative genetics
-* Regulatory genomics
-* Functional genomics
-* Molecular & digital evolution
-* Molecular dynamics
-* Protein residue coupling & structure prediction
-* Modeling cellular pathways
-* Metabolomics & modeling metabolic flux
-* Large-scale biological networks
+1. Genome assembly, alignment, & annotation
+    * de Bruijin graphs; Suffix trees; Hidden Markov models
+2. Sequence alignment; Pattern finding
+    * Dynamic programming; Substitution matrices; BLAST
+3. Comparative genomics; Phylogenomics
+    * Molecular evolution; Tree construction
+4. Genetic variation; Quantitative genetics
+    * LD, GWAS, Regularized linear regression; Statistical inference, Multiple testing
+5. Regulatory genomics
+    * Gibbs sampling; Expectation-Maximization
+6. Functional genomics
+    * Differential expression; Functional enrichment analysis; Clustering; Intro to ML
+7. Single-cell genomics
+    * Missing value imputaion; Dimensionality reduction; Trajectory inference; Spatial reconstruction
+8. Molecular dynamics; Protein structure prediction
+    * Molecular simulation; Maximum entropy modeling
+9. Modeling cellular pathways; Digital evolution
+    * Dynamical simulation, State Space, Bifurcation; Linear programming; Artificial life
+10. Biological networks
+    * Measuring associations; Network inference; Graph theory, Label propagation
 
-Each topic is covered over two classes, a "Lecture" and a "Paper discussion".
+Each topic is covered over "Lecture" and "Paper discussion" classes.
+
+Along with these, we are going to cover the following *special topics* as 1-class lecures: **Cancer genomics**, **Genome engineering**, and **Personal genomics**.
+
+And, we will also have practical and conceptual primers:
+* **DataSci Primers**: Data wrangling & visualization in R/Python; Exploratory data analysis
+* **ML Primers**: Machine learning; Deep learning; Applications
 
 ### Recommended Materials
-TBD
+[This document](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Additional-learning-resources.md) contains links to a bunch of excellent resources for brushing-up your Unix, Python/R, Statistics, and Biology.
 
 \[ [Top](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/README.md#cmse-491-890-bioinformatics-and-computational-biology) ]
 
@@ -66,48 +80,78 @@ Schedule | Mon, Wed, and Fri</br>11:00 am - 12:10 pm
 Location | 351 Natural Sciences Bldg
 
 ### Calendar
-This calendar contains the class schedule and the links to the lecture slides and reading materials. Download the PDF file [TBD].
+This calendar contains the class schedule and the links to the lecture slides and reading materials. Download the detailed schedule as a [PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/CMSE-491-890_Spring-2019_Schedule.pdf).
 
-Details TBD
-
-Topic | Content
-:---- | :------
-Introduction and Overview | Course overview, Getting started
-Genome assembly & annotation | de Bruijn graphs, Hidden Markov Models
-Sequence alignment & pattern finding | Dynamic programming
-Comparative genomics | Tree construction, Suffix trees
-Genetic variation & quantitative genetics | Statistical inference, Multiple testing
-Regulatory genomics | Expectation Maximization, Gibbs sampling
-Functional genomics | Dimensionality reduction, Machine learning
-Molecular & digital evolution | Artificial life simulation
-Molecular dynamics | Molecular simulation
-Protein residue coupling & structure prediction | Maximum entropy modeling
-Modeling cellular pathways | Dynamical simulation, State space, Bifurcations
-Metabolomics & modeling metabolic flux | Linear programming
-Large-scale biological networks | Graph theory, Label propagation
-
-Additional classes for:
-- Mini primers
-- Mid-term proposal prensentaions
-- Final project presentations
+| ID | Date | Module | Topic | Learning Materials |
+|:---------|-------------:|:-------------------------|:------------------------|:------------------------|
+| W01M | Jan 07 | Introduction & Overview | Course overview | Lecture 1 \[[PDF](https://github.com/krishnanlab/teaching/tree/master/2019-spring_compbio/Lectures/Lecture1.pdf)]</br>[Incoming survey](https://bit.ly/ss19-compbio_incoming-survey) |
+| W01W | Jan 09 | Introduction & Overview | Getting started in bioinformatics & computational biology – Part 1 | Lecture 2 & 3 \[[PDF](https://github.com/krishnanlab/teaching/tree/master/2019-spring_compbio/Lectures/Lecture2-3.pdf)] |
+| W01F | Jan 11 | Introduction & Overview | Getting started in bioinformatics & computational biology – Part 2 |  |
+| W02M | Jan 14 | Genome assembly, alignment, & annotation | de Bruijin graphs; Suffix trees |  |
+| W02W | Jan 16 | Genome assembly, alignment, & annotation | Hidden Markov models |  |
+| W02F | Jan 18 | Genome assembly, alignment, & annotation | Paper discussion |  |
+| W03M | Jan 21 | No Class; Need an extra class to compensate |  |  |
+| W03W | Jan 23 | Sequence alignment & pattern finding | Dynamic programming |  |
+| W03F | Jan 25 | Sequence alignment & pattern finding | Substitution matrices; BLAST; Paper discussion |  |
+| W04M | Jan 28 | Comparative genomics; Phylogenomics | Molecular evolution |  |
+| W04W | Jan 30 | Comparative genomics; Phylogenomics | Tree construction |  |
+| W04F | Feb 01 | Comparative genomics; Phylogenomics | Paper discussion |  |
+| W05M | Feb 04 | Genetic variation & quantitative genetics | LD, GWAS, Regularized linear regression |  |
+| W05W | Feb 06 | Genetic variation & quantitative genetics | Statistical inference, Multiple hypothesis testing |  |
+| W05F | Feb 08 | Genetic variation & quantitative genetics | Paper discussion |  |
+| W06M | Feb 11 | Regulatory genomics | Gibbs sampling |  |
+| W06W | Feb 13 | Regulatory genomics | Expectation-Maximization |  |
+| W06F | Feb 15 | Regulatory genomics | Paper discussion |  |
+| W07M | Feb 18 | Functional genomics | Differential expression; Functional enrichment analysis |  |
+| W07W | Feb 20 | Functional genomics | Clustering; Intro to machine learning |  |
+| W07F | Feb 22 | Functional genomics | Paper discussion |  |
+| W08M | Feb 25 | DataSci Primers | Data wrangling & visualization in R/Python – Part 1 |  |
+| W08W | Feb 27 | DataSci Primers | Data wrangling & visualization in R/Python – Part 2 |  |
+| W08F | Mar 01 | DataSci Primers | Exploratory data analysis |  |
+| W09M | Mar 04 | No class (Spring break) |  |  |
+| W09W | Mar 06 | No class (Spring break) |  |  |
+| W09F | Mar 08 | No class (Spring break) |  |  |
+| W10M | Mar 11 | Mid-course project presentations | Lightning talks |  |
+| W10W | Mar 13 | Mid-course project presentations |  |  |
+| W10F | Mar 15 | Mid-course project presentations |  |  |
+| W11M | Mar 18 | ML Primers | Machine learning |  |
+| W11W | Mar 20 | ML Primers | Deep learning |  |
+| W11F | Mar 22 | ML Primers | ML/DL Applications |  |
+| W12M | Mar 25 | Single-cell genomics | Missing value imputaion; Dimensionality reduction |  |
+| W12W | Mar 27 | Single-cell genomics | Trajectory inference; Spatial reconstruction |  |
+| W12F | Mar 29 | Single-cell genomics | Paper discussion |  |
+| W13M | Apr 01 | Molecular dynamics; Protein structure prediction | Molecular simulation |  |
+| W13W | Apr 03 | Molecular dynamics; Protein structure prediction | Maximum entropy modeling |  |
+| W13F | Apr 05 | Molecular dynamics; Protein structure prediction | Paper discussion |  |
+| W14M | Apr 08 | Modeling cellular pathways; Digital evolution | Dynamical simulation, State Space, Bifurcation |  |
+| W14W | Apr 10 | Modeling cellular pathways; Digital evolution | Linear programming; Artificial life |  |
+| W14F | Apr 12 | Modeling cellular pathways; Digital evolution | Paper discussion |  |
+| W15M | Apr 15 | Biological networks | Measuring associations; Network inference |  |
+| W15W | Apr 17 | Biological networks | Graph theory, Label propagation |  |
+| W15F | Apr 19 | Biological networks | Paper discussion |  |
+| W16M | Apr 22 | Cancer genomics | Overview |  |
+| W16W | Apr 24 | Genome engineering | Overview |  |
+| W16F | Apr 26 | Personal genomics | Overview |  |
+| W17M | Apr 29 | Final project presentations | One of these days: Poster presentations |  |
+| W17W | May 01 | Final project presentations | One of these days: Poster presentations |  |
+| W17F | May 03 | Final project presentations | One of these days: Poster presentations |  |
 
 #### Project deadlines
 Item | Due date
 :--- | -------:
-Project profile | TBD
-Project topic | TBD
-Project pre-proposal | TBD
-Project proposal | TBD
-Proposal reviews | TBD
-Mid-term project proposal presentations | TBD
-Review response | TBD
-Mid-course project report | TBD
-Final project report | TBD
-Final project presentations 1 | TBD
-Final project presentations 2 | TBD
+Project profile | W Jan 16
+Project topic | F Feb 01
+Project pre-proposal | W Fri 08
+Project proposal | W Feb 20
+Proposal reviews | F Mar 01
+Mid-term project proposal presentations | M Mar 11</br>W Mar 13</br>F Mar 15
+Review response | Th Mar 14</br>Sa Mar 16</br>M Mar 18
+Mid-course project report | F Mar 29
+Final project report | F Apr 26
+Final project presentations | M Apr 29
 
 ### Office Hours
-TBD
+Tuesdays 5–7pm
 
 I will block this time from my schedule and be present in my office.
 
@@ -123,7 +167,7 @@ Couple of things to note:
 This [GitHub repo](https://github.com/krishnanlab/teaching/tree/master/2019-spring_compbio) will serve as the course website.  
 
 ### Communication
-The primary mode of communication in this course (including major announcements), will be the course Slack account [TBD]. All of you should have invitations to join this account in your MSU email.  
+The primary mode of communication in this course (including major announcements), will be the [course Slack account](https://cmse-compbio-ss19.slack.com). All of you should have invitations to join this account in your MSU email.  
 
 **Emails**  
 Although the bulk of the communication will take place via Slack, at times (rarely), we will send out important course information via email. This email is sent to your MSU email address (the one that ends in “@msu.edu”). You are responsible for all information sent out to your University email account, and for checking this account on a regular basis.
@@ -132,13 +176,10 @@ Although the bulk of the communication will take place via Slack, at times (rare
 
 ## Course Activities
 
-### Pre-class Assignments
-For each topic, you will be assigned a paper after the topic's "lecture" class that you are required to read. The link to the PDF of the paper will be posted on this page next to the topic on the [Calendar](https://github.com/krishnanlab/teaching/tree/master/2019-spring_compbio#calendar) along with instructions on a specific analysis in the paper you should pay special attention to.
+### Assignments
+For each topic, you will be given an assignment after the topic's "lecture" class that you are required to work on. Links to the assignment will be posted on this page next to the topic on the [Calendar](https://github.com/krishnanlab/teaching/tree/master/2019-spring_compbio#calendar) and specific instructions will be posted on Slack.
 
-You are required to turn-in a 1-page report containing the following:
-
-Critical and thorough analysis of a specific section/figure.
-It should contain the following four sections:
+Along with the assignment, you are required to turn-in a 1-page report of that week's paper containing a critical and thorough analysis of a specific section/figure with thefollowing four sections:
 1. _Data_
     - What data did they use to perform the analysis presented in the figure?
     - Where did each piece of data come from?
@@ -152,7 +193,7 @@ It should contain the following four sections:
 4. _Conclusions_
     - Are the conclusions you draw from the figure in agreement with those drawn by the authors?
 
-This report is due _before_ the topic's "Paper discussion" class. Points will be deducted for reports shorter or longer than two-pages. Wrong papers will be graded as zero.
+This report is due _before_ the topic's "Paper discussion" class. Points will be deducted for reports shorter or longer than 1-page. Wrong papers will be graded as zero.
 
 ### Class Participation
 In general:
@@ -174,9 +215,10 @@ You will also take turns to present the assigned paper during each topic's "Pape
 - The two students will also make a note of all the points discussed in the class during the presentation, write-up them up by working with me, and post the discussion on [PubPeer](https://pubpeer.com/).
 
 ### Scribing
-Each topic's "Lecture" class will have two dedicated scribes who will take notes on the lecture, work with Arjun to refine the notes, and circulate a final version to the rest of the class.
-- The scribes should submit their _individually completed_ drafts of their scribe notes within 3 days after lecture. I will read those notes and give comments/suggestions.
-- The two scribes should then work together to combine their drafts+comments into a single final scribe notes and submit within 6 days after lecture.
+Each topic's "Lecture" class will have a dedicated scribe who will take notes on the lecture, work with Arjun to refine the notes, and circulate a final version to the rest of the class.
+- We will use [stackedit](https://stackedit.io) + Google Drive to create notes and then publish them on GitHub.
+- Scribe should submit their draft of their notes within 3 days after lecture. I will read those notes and give comments/suggestions.
+- The final scribe notes that incorporates all the comments should be submitted within 6 days after lecture.
 
 ### Semester Project and Presentation
 A major goal of this course is to prepare you for performing original research in computational biology, and for effectively presenting your ideas and research. The semester project will serve as the most practical way to do exactly that.
@@ -199,25 +241,27 @@ The outcomes of this semester-long project should include:
     - Results and Discussion
     - Limitations and Future Directions
     - References
-3. A presentation (slides) that describes your project - motivation, exact problem, approach, results, discussion & conclusions, limitations & future direcrtions, acknowledgements.
+    - Glossary
+3. A poster that describes your project - motivation, exact problem, approach, results, discussion & conclusions, limitations & future direcrtions, acknowledgements.
 
 There are several [project deadlines](https://github.com/krishnanlab/teaching/tree/master/2019-spring_compbio#project-deadlines) throughout the course that will help you stay on track, allowing you to complete a substantial project.
-1. Describe your previous research, areas of research interest in bioinformatics / computational-biology, type of project that best fits your interests. Post this description in a profile that lets your classmates know you. **TBD**
-2. Discuss with Arjun (and any other PI) and read recent papers. Describe project ideas. **TBD**
-3. Prepare a two-page pre-proposal (Page1: text; Page2: figures & references). **TBD**
-4. Write 4-page proposal describing project goals, division of work, milestones, datasets, and challenges. **TBD**
-5. Review and discuss proposals (NIH review format). **TBD**
-6. Address peer evaluations, revise aims, scope, list of final goals & deliverables. **TBD** (note: due after presentation).
-7. Continue making substantial progress on proposed milestones. Write outline/first-draft of final report. Meet Arjun to discuss all results and get feedback on the draft. **TBD**
-8. Complete milestones, finalize results, figures, write-up in conference publication format. As part of the report, comment on your overall project experience. **TBD**
-9. Final project presentations will take place on the **TBD** and **TBD**.
+1. Describe your previous research, areas of research interest in bioinformatics / computational-biology, type of project that best fits your interests. Post this description in a profile that lets your classmates know you. Project profile due **W Jan 16**.
+2. Discuss with Arjun (and any other PI) and read recent papers. Briefly describe project ideas. Project topic due **F Feb 01**.
+3. Prepare a two-page pre-proposal (Page1: text; Page2: figures & references). Project pre-proposal due **W Fri 08**.
+4. Write 5-page proposal describing project goals, division of work, milestones, datasets, and challenges. Project proposal due **W Feb 20**.
+5. Review proposals. Discuss proposal with Arjun. Reviews due **F Mar 01**.
+6. Mid-course project presentations on **M Mar 11**, **W Mar 13**, and **F Mar 15**.
+7. Address peer evaluations, revise aims, scope, list of final goals & deliverables. Meet with Arjun. Response is due 3 days after mid-course presentation: **Th Mar 14**, **Sa Mar 16**, or **M Mar 18**.
+8. Continue making substantial progress on proposed milestones. Write the first-draft of final report. Meet Arjun to discuss all results and get feedback on the draft. Mid-course project report due **F Mar 29**.
+9. Complete milestones, finalize results, figures, write-up in conference publication format. As part of the report, comment on your overall project experience. Final project report due **F Apr 26**.
+10. Final project presentations will take place on **M Apr 29**.
 
 \[ [Top](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/README.md#cmse-491-bioinformatics-and-computational-biology) ]
 
 ## Grading Information
 Activity | Percentage
 :----- | ---------:
-Pre-class assignments | ~35%
+Assignments | ~35%
 Class participation | ~15%
 Scribing | ~10%
 Project | ~40%
