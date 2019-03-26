@@ -38,15 +38,14 @@ Contact | Email: arjun@msu.edu</br>Twitter: [@compbiologist](https://twitter.com
 
 ## Course Outline and Materials
 ### Major Topics
-_(subject to changes)_
-1. Genome assembly, alignment, & annotation
-    * de Bruijin graphs; Suffix trees; Hidden Markov models
+1. Genome assembly & annotation
+    * Assembly with de Bruijin graphs; Gene prediction with Hidden Markov models
 2. Sequence alignment; Pattern finding
-    * Dynamic programming; Substitution matrices; BLAST
+    * Local/global alignment with dynamic programming; Substitution matrices; BLAST
 3. Comparative genomics; Phylogenomics
-    * Molecular evolution; Tree construction
+    * Whole genome alignment; Suffix trees; Molecular evolution; Tree construction
 4. Genetic variation; Quantitative genetics
-    * LD, GWAS, Regularized linear regression; Statistical inference, Multiple testing
+    * GWAS, Regularized linear regression; Statistical inference, Multiple testing
 5. Regulatory genomics
     * Gibbs sampling; Expectation-Maximization
 6. Functional genomics
@@ -60,13 +59,18 @@ _(subject to changes)_
 10. Biological networks
     * Measuring associations; Network inference; Graph theory, Label propagation
 
-Each topic is covered over "Lecture" and "Paper discussion" classes.
+Each topic is covered over two "Lecture" classes and a "Paper discussion" class.
 
-Along with these, we are going to cover the following *special topics* as 1-class lecures: **Cancer genomics**, **Genome engineering**, and **Personal genomics**.
+### Special Topics
+Along with these, we are going to cover the following *special topics* as 1-class lecures:
+* Cancer genomics
+* Genome engineering
+* Personal genomics
 
+### Primers
 And, we will also have practical and conceptual primers:
-* **DataSci Primers**: Data wrangling & visualization in R/Python; Exploratory data analysis
-* **ML Primers**: Machine learning; Deep learning; Applications
+* DataSci Primers: Data wrangling, exploratory data analysis, & visualization in R/Python; R/Jupyter notebooks; Version control w/ Git.
+* ML Primers: Machine learning; Deep learning; Applications in biology & medicine.
 
 ### Recommended Materials
 [This document](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Additional-learning-resources.md) contains links to a bunch of excellent resources for brushing-up your Unix, Python/R, Statistics, and Biology.
@@ -87,27 +91,27 @@ This calendar contains the class schedule and the links to the lecture slides an
 | W01M | Jan 07 | Introduction & Overview | Course overview | Lecture 1 \[[PDF](https://github.com/krishnanlab/teaching/tree/master/2019-spring_compbio/Lectures/Lecture1.pdf)]</br>[Incoming survey](https://bit.ly/ss19-compbio_incoming-survey) |
 | W01W | Jan 09 | Introduction & Overview | Getting started in bioinformatics & computational biology – Part 1 | Lecture 2 & 3 \[[PDF](https://github.com/krishnanlab/teaching/tree/master/2019-spring_compbio/Lectures/Lecture2-3.pdf)] |
 | W01F | Jan 11 | Introduction & Overview | Getting started in bioinformatics & computational biology – Part 2 |  |
-| W02M | Jan 14 | Genome assembly, alignment, & annotation | de Bruijin graphs; Suffix trees |  |
-| W02W | Jan 16 | Genome assembly, alignment, & annotation | Hidden Markov models |  |
-| W02F | Jan 18 | Genome assembly, alignment, & annotation | Paper discussion |  |
-| W03M | Jan 21 | No Class; Need an extra class to compensate |  |  |
-| W03W | Jan 23 | Sequence alignment & pattern finding | Dynamic programming |  |
-| W03F | Jan 25 | Sequence alignment & pattern finding | Substitution matrices; BLAST; Paper discussion |  |
-| W04M | Jan 28 | Comparative genomics; Phylogenomics | Molecular evolution |  |
-| W04W | Jan 30 | Comparative genomics; Phylogenomics | Tree construction |  |
-| W04F | Feb 01 | Comparative genomics; Phylogenomics | Paper discussion |  |
-| W05M | Feb 04 | Genetic variation & quantitative genetics | LD, GWAS, Regularized linear regression |  |
-| W05W | Feb 06 | Genetic variation & quantitative genetics | Statistical inference, Multiple hypothesis testing |  |
-| W05F | Feb 08 | Genetic variation & quantitative genetics | Paper discussion |  |
-| W06M | Feb 11 | Regulatory genomics | Gibbs sampling |  |
-| W06W | Feb 13 | Regulatory genomics | Expectation-Maximization |  |
-| W06F | Feb 15 | Regulatory genomics | Paper discussion |  |
-| W07M | Feb 18 | Functional genomics | Differential expression; Functional enrichment analysis |  |
-| W07W | Feb 20 | Functional genomics | Clustering; Intro to machine learning |  |
-| W07F | Feb 22 | Functional genomics | Paper discussion |  |
-| W08M | Feb 25 | DataSci Primers | Data wrangling & visualization in R/Python – Part 1 |  |
-| W08W | Feb 27 | DataSci Primers | Data wrangling & visualization in R/Python – Part 2 |  |
-| W08F | Mar 01 | DataSci Primers | Exploratory data analysis |  |
+| W02M | Jan 14 | Genome assembly & annotation | de Bruijin graphs; Suffix trees | Lecture 4 \[[PDF](https://github.com/krishnanlab/teaching/tree/master/2019-spring_compbio/Lectures/Lecture4.pdf)] |
+| W02W | Jan 16 | Genome assembly & annotation | Hidden Markov models | Lecture 5 \[[PDF](https://github.com/krishnanlab/teaching/tree/master/2019-spring_compbio/Lectures/Lecture5.pdf)]  | 
+| W02F | Jan 18 | Genome assembly & annotation | Paper discussion | Velvet: Algorithms for de novo short read assembly using de Bruijn graphs \[[Journal](http://genome.cshlp.org/content/18/5/821)] \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Papers/Zerbino2008_velvet-assembler.pdf)]</br>Student presentation \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Presentations/Velvet_Justin.pdf)] |
+| W03M | Jan 21 | No Class |  |  |
+| W03W | Jan 23 | Sequence alignment & pattern finding | Dynamic programming | Lectures 6-7 \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Lectures/Lecture6-7.pdf)] |
+| W03F | Jan 25 | Sequence alignment & pattern finding | Substitution matrices; BLAST; Paper discussion | Basic local alignment search tool \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Papers/Altschul1990_BLAST.pdf)]</br>Steps used by the BLAST algorithm \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Papers/Mount2007_steps-used-by-blast.pdf)]</br>Student presentation \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Presentations/BLAST_Zoe-Hakim.pdf)] |
+| W04M | Jan 28 | Comparative genomics; Phylogenomics | Whole-genome alignment; Suffix trees | Lectures 8-9 \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Lectures/Lecture8-9.pdf)] |
+| W04W | Jan 30 | Comparative genomics; Phylogenomics | Molecular evolution; Tree construction | See link above |
+| W04F | Feb 01 | Comparative genomics; Phylogenomics | Paper discussion | Whole-genome alignment:</br>- MUMmer1: Alignment of whole genomes \[[Journal](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC148804/)] \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Papers/Delcher1999_MUMmer1.pdf)]</br>- MUMmer2: Fast algorithms for large-scale genome alignment and comparison \[[Journal](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC117189/)] \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Papers/Delcher2002_MUMmer2.pdf)]</br>- MUMmer3: Versatile and open software for comparing large genomes \[[Journal](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2004-5-2-r12)] \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Papers/Kurtz2004_MUMmer3.pdf)]</br>- MUMmer4: A fast and versatile genome alignment system \[[Journal](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005944)] \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Papers/Marc%CC%A7ais2018_MUMmer4.pdf)] |
+| W05M | Feb 04 | Genetic variation & quantitative genetics | GWAS, Statistical inference, Multiple testing | Lectures 10-11 \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Lectures/Lecture10-11.pdf)] |
+| W05W | Feb 06 | Genetic variation & quantitative genetics | Regularized linear regression | See link above |
+| W05F | Feb 08 | Genetic variation & quantitative genetics | Paper discussion |  Genome-wide association studies and multiple hypothesis correction:</br>- Mining Genome-Wide Genetic Markers \[[Journal](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002828)] \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Papers/Zhang2012_mining-genomewide-genetic-markers.PDF)]</br>- Genome-Wide Association Studies \[[Journal](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002822)] \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Papers/Bush-Moore2012_GWAS.PDF)]</br>- How does multiple testing correction work? \[[Journal](https://www.nature.com/articles/nbt1209-1135)] \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Papers/Noble2009_primer-multiple-testing-correction.pdf)]</br>- Statistical significance for genomewide studies \[[Journal](http://www.pnas.org/content/100/16/9440.full)] \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Papers/Storey-Tibshirani2003_statistical-significance-genomewide-studies.pdf)] |
+| W06M | Feb 11 | Regulatory genomics | Finding regulatory motifs; Expectation-Maximization | Lectures 12-13 \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Lectures/Lecture12-13.pdf)]  |
+| W06W | Feb 13 | Regulatory genomics | Gibbs sampling |  |
+| W06F | Feb 15 | Regulatory genomics | Paper discussion | - What are DNA sequnence motifs? \[[Journal](https://www.nature.com/articles/nbt0406-423)] \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Papers/Dhaeseleer2006_what-are-dna-motifs.pdf)]</br>- How does DNA sequence motif discovery work? \[[Journal](https://www.nature.com/articles/nbt0806-959)] \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Papers/Dhaeseleer2006_how-does-motif-discovery-work.pdf)]</br>- What is the Expectation Maximization algorithm? \[[Journal](https://www.nature.com/articles/nbt1406)] \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Papers/Do-Batzoglou2008_what-is-EM.pdf)]</br>- Practical Strategies for Discovering Regulatory DNA Sequence Motifs \[[Journal](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.0020036)] \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Papers/MacIsaac-Fraenkel2006_strategies-for-discovering-motifs.pdf)] |
+| W07M | Feb 18 | Functional genomics | Clustering; Intro to machine learning | Lectures 14-15 \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Lectures/Lecture14-15.pdf)] |
+| W07W | Feb 20 | Functional genomics | Differential expression; Functional enrichment analysis | |
+| W07F | Feb 22 | Functional genomics | Paper discussion | A module map showing conditional activity of expression modules in cancer \[[Journal(https://www.nature.com/articles/ng1434)] \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Papers/Segal2004_cancer-module-map.pdf)] |
+| W08M | Feb 25 | DataSci Primers | Data wrangling & visualization in R/Python – Part 1 | Note change of location:</br>R Camp: WH B110G</br>Python Camp: WH B110F |
+| W08W | Feb 27 | DataSci Primers | Data wrangling & visualization in R/Python – Part 2 | Note change of location:</br>R Camp: WH B110G</br>Python Camp: WH B110F |
+| W08F | Mar 01 | DataSci Primers | Exploratory data analysis | Note change of location:</br>R Camp: WH B110G</br>Python Camp: WH B110F |
 | W09M | Mar 04 | No class (Spring break) |  |  |
 | W09W | Mar 06 | No class (Spring break) |  |  |
 | W09F | Mar 08 | No class (Spring break) |  |  |
@@ -141,7 +145,7 @@ Item | Due date
 :--- | -------:
 Project profile | W Jan 16
 Project topic | F Feb 01
-Project pre-proposal | W Fri 08
+Project pre-proposal | M Fri 11
 Project proposal | W Feb 20
 Proposal reviews | F Mar 01
 Mid-term project proposal presentations | M Mar 11</br>W Mar 13</br>F Mar 15
@@ -245,15 +249,38 @@ The outcomes of this semester-long project should include:
 3. A poster that describes your project - motivation, exact problem, approach, results, discussion & conclusions, limitations & future direcrtions, acknowledgements.
 
 There are several [project deadlines](https://github.com/krishnanlab/teaching/tree/master/2019-spring_compbio#project-deadlines) throughout the course that will help you stay on track, allowing you to complete a substantial project.
+
 1. Describe your previous research, areas of research interest in bioinformatics / computational-biology, type of project that best fits your interests. Post this description in a profile that lets your classmates know you. Project profile due **W Jan 16**.
+
 2. Discuss with Arjun (and any other PI) and read recent papers. Briefly describe project ideas. Project topic due **F Feb 01**.
-3. Prepare a two-page pre-proposal (Page1: text; Page2: figures & references). Project pre-proposal due **W Fri 08**.
-4. Write 5-page proposal describing project goals, division of work, milestones, datasets, and challenges. Project proposal due **W Feb 20**.
+
+3. Prepare a two-page pre-proposal (Page1: text; Page2: figures & references). Project pre-proposal due **M Fri 11**.
+
+4. Write full proposal. Project proposal due **M Feb 25**.
+    - Length: 5-pages (incl. figures & ref; sections listed below)
+    - Sections:
+        - *Background, goals, & significance* (what is the problem you are hoping to address; what is the current approach & its limitations; what will you do & why is it likely to succeed; if successful, what is the broader impact)
+        - *Datasets* (what datasets will you use; where are they from; what exactly do they contain; how are they formatted)
+        - *Computational methods/approach* (what are the analytical methods; what are the specific software implementations you'll use; include your flowchart here)
+        - *Evaluations* (how will you evaluate the results that you get; think in terms of how to test if a) your approach is working correctly without errors and b) your results make quantitative/biological sense and are meaningful)
+        - *Potential challenges & alternative approaches* (what are some assumptions you are making that can fail; what are some potential limitations of your dataset or approach that might prevent you from achieving your aforementioned goals; what will you do as alternatives if you hit those limitations)
+        - *Specific milestones* (what is the list of specific results/outcomes you will work on getting)
+
 5. Review proposals. Discuss proposal with Arjun. Reviews due **F Mar 01**.
+
 6. Mid-course project presentations on **M Mar 11**, **W Mar 13**, and **F Mar 15**.
+    - In addition to the usual things – background, problem, approach, etc. – I would like you to also present the following:
+        - Clear flowchart of approach.
+        - Thorough exploration of data (tables & plots to showcase your datasets)
+        - Method/software usage & I/O format.
+        - Preliminary analysis with simple baselines, samples datasets, and toy examples (discuss with me to determine what this means for your project; doing this over slack is fine).
+
 7. Address peer evaluations, revise aims, scope, list of final goals & deliverables. Meet with Arjun. Response is due 3 days after mid-course presentation: **Th Mar 14**, **Sa Mar 16**, or **M Mar 18**.
+
 8. Continue making substantial progress on proposed milestones. Write the first-draft of final report. Meet Arjun to discuss all results and get feedback on the draft. Mid-course project report due **F Mar 29**.
+
 9. Complete milestones, finalize results, figures, write-up in conference publication format. As part of the report, comment on your overall project experience. Final project report due **F Apr 26**.
+
 10. Final project presentations will take place on **M Apr 29**.
 
 \[ [Top](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/README.md#cmse-491-bioinformatics-and-computational-biology) ]
