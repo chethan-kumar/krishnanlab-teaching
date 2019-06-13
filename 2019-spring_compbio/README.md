@@ -118,27 +118,25 @@ This calendar contains the class schedule and the links to the lecture slides an
 | W10M | Mar 11 | Mid-course project presentations | Lightning talks |  |
 | W10W | Mar 13 | Mid-course project presentations |  |  |
 | W10F | Mar 15 | Mid-course project presentations |  |  |
-| W11M | Mar 18 | ML Primers | Machine learning |  |
-| W11W | Mar 20 | ML Primers | Deep learning |  |
-| W11F | Mar 22 | ML Primers | ML/DL Applications |  |
-| W12M | Mar 25 | Single-cell genomics | Missing value imputaion; Dimensionality reduction |  |
-| W12W | Mar 27 | Single-cell genomics | Trajectory inference; Spatial reconstruction |  |
-| W12F | Mar 29 | Single-cell genomics | Paper discussion |  |
-| W13M | Apr 01 | Molecular dynamics; Protein structure prediction | Molecular simulation |  |
-| W13W | Apr 03 | Molecular dynamics; Protein structure prediction | Maximum entropy modeling |  |
-| W13F | Apr 05 | Molecular dynamics; Protein structure prediction | Paper discussion |  |
-| W14M | Apr 08 | Modeling cellular pathways; Digital evolution | Dynamical simulation, State Space, Bifurcation |  |
-| W14W | Apr 10 | Modeling cellular pathways; Digital evolution | Linear programming; Artificial life |  |
-| W14F | Apr 12 | Modeling cellular pathways; Digital evolution | Paper discussion |  |
-| W15M | Apr 15 | Biological networks | Measuring associations; Network inference |  |
-| W15W | Apr 17 | Biological networks | Graph theory, Label propagation |  |
-| W15F | Apr 19 | Biological networks | Paper discussion |  |
-| W16M | Apr 22 | Cancer genomics | Overview |  |
-| W16W | Apr 24 | Genome engineering | Overview |  |
-| W16F | Apr 26 | Personal genomics | Overview |  |
-| W17M | Apr 29 | Final project presentations | One of these days: Poster presentations |  |
-| W17W | May 01 | Final project presentations | One of these days: Poster presentations |  |
-| W17F | May 03 | Final project presentations | One of these days: Poster presentations |  |
+| W11M | Mar 18 | ML Primers | Machine learning – Supervised/Unsupervised learning; Model validation & selection |  |
+| W11W | Mar 20 | ML Primers | Machine learning – Evaluation metrics; ML algorithms | |
+| W11F | Mar 22 | ML Primers | ML/DL Applications | Lectures 18 \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Lectures/Lecture16-18.pdf)] |
+| W12M | Mar 25 | Single-cell genomics | Missing value imputaion; Dimensionality reduction | Lectures 19-20 \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Lectures/Lecture19-20.pdf)] |
+| W12W | Mar 27 | Single-cell genomics | Trajectory inference; Spatial reconstruction | See above. |
+| W12F | Mar 29 | Single-cell genomics | Paper discussion | The dynamics and regulators of cell fate decisions are revealed by pseudotemporal ordering of single cells \[[Journal](https://www.nature.com/articles/nbt.2859)] \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Papers/Trapnell2014_scrnaseq-pseudotime-monocle.pdf)] |
+| W13M | Apr 01 | Molecular dynamics; Protein structure prediction | Molecular simulation | Lectures 21-22 \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Lectures/Lecture21-22.pdf)] |
+| W13W | Apr 03 | Molecular dynamics; Protein structure prediction | Maximum entropy modeling | See above. |
+| W13F | Apr 05 | Molecular dynamics; Protein structure prediction | Paper discussion | - Predicting protein structures with a multiplayer online game \[[Journal](https://www.nature.com/articles/nature09304)] \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Papers/Cooper2010_Foldit.pdf)]</br>- [GROMACS tutorial](http://md.chem.rug.nl/~mdcourse/index.html) |
+| W14M | Apr 08 | Modeling cellular pathways; Digital evolution | Dynamical simulation, State Space, Bifurcation | Lecture 23 \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Lectures/Lecture23.pdf)] |
+| W14W | Apr 10 | Modeling cellular pathways; Digital evolution | Metabolic reconstruction; Contraint-based modeling | Lecture 24 \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Lectures/Lecture24.pdf) |
+| W14F | Apr 12 | Modeling cellular pathways; Digital evolution | Paper discussion | - Construction of a genetic toggle switch in E. coli \[[Journal](https://www.nature.com/articles/35002131)] \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Papers/Gardner2000-Ecoli-genetic-toggle-switch.pdf)] |
+| W15M | Apr 15 | Biological networks | Measuring associations; Network inference | Lectures 25-26 \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Lectures/Lecture25-26.pdf)] |
+| W15W | Apr 17 | Biological networks | Graph theory, Label propagation | See above. |
+| W15F | Apr 19 | Biological networks | Paper discussion | Genomic analysis of regulatory network dynamics reveals large topological changes \[[Journal](https://www.nature.com/articles/nature02782)] \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Papers/Luscombe2004_topological-network-dynamics.pdf) |
+| W16M | Apr 22 | Cancer genomics | Overview | Lectures 27 \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Lectures/Lecture27.pdf)] |
+| W16W | Apr 24 | Genome engineering | Overview | Lectures 28 \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Lectures/Lecture28.pdf)] |
+| W16F | Apr 26 | Personal genomics | Overview | Lectures 29 \[[PDF](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/Lectures/Lecture29.pdf)] |
+| W17T | May 02 | Final project presentations | Poster presentations (12:45 – 2:45 pm) |  |
 
 #### Project deadlines
 Item | Due date
@@ -151,8 +149,8 @@ Proposal reviews | F Mar 01
 Mid-term project proposal presentations | M Mar 11</br>W Mar 13</br>F Mar 15
 Review response | Th Mar 14</br>Sa Mar 16</br>M Mar 18
 Mid-course project report | F Mar 29
-Final project report | F Apr 26
-Final project presentations | M Apr 29
+Final project report | M Apr 29
+Final project presentations | Th May 2
 
 ### Office Hours
 Tuesdays 5–7pm
@@ -248,7 +246,7 @@ The outcomes of this semester-long project should include:
     - Glossary
 3. A poster that describes your project - motivation, exact problem, approach, results, discussion & conclusions, limitations & future direcrtions, acknowledgements.
 
-There are several [project deadlines](https://github.com/krishnanlab/teaching/tree/master/2019-spring_compbio#project-deadlines) throughout the course that will help you stay on track, allowing you to complete a substantial project.
+There are several [project deadlines](https://github.com/krishnanlab/teaching/tree/master/2019-spring_compbio#project-deadlines) throughout the course that will help you stay on track, enabling you to complete a substantial project.
 
 1. Describe your previous research, areas of research interest in bioinformatics / computational-biology, type of project that best fits your interests. Post this description in a profile that lets your classmates know you. Project profile due **W Jan 16**.
 
@@ -279,9 +277,9 @@ There are several [project deadlines](https://github.com/krishnanlab/teaching/tr
 
 8. Continue making substantial progress on proposed milestones. Write the first-draft of final report. Meet Arjun to discuss all results and get feedback on the draft. Mid-course project report due **F Mar 29**.
 
-9. Complete milestones, finalize results, figures, write-up in conference publication format. As part of the report, comment on your overall project experience. Final project report due **F Apr 26**.
+9. Complete milestones, finalize results, figures, write-up in conference publication format. As part of the report, comment on your overall project experience. Final project report due **F Apr 29**.
 
-10. Final project presentations will take place on **M Apr 29**.
+10. Final project presentations will take place on **Th May 02** 12:45pm – 2:45pm in 351 Natural Sciences Bldg.
 
 \[ [Top](https://github.com/krishnanlab/teaching/blob/master/2019-spring_compbio/README.md#cmse-491-bioinformatics-and-computational-biology) ]
 
